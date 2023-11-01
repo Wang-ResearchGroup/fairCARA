@@ -11,11 +11,15 @@ This package implements fair covariate-adjusted response-adaptive (CARA) design.
 ## Example usage:
 
 ```R
-library(fairCARA)
+
+# load packages
+library(fairCARA) 
 library(nloptr)
 
+# user-specified subgroup proportions
 true_p <- c(0.5,0.5)
 
+# specify mean and standard deviation in treatment and control arm for adaptive experiments simulation
 mu1.t <- 4  
 mu1.c <- 2  
 sd1.t <- 2.5  
