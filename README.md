@@ -25,18 +25,26 @@ mu1.c <- 2
 sd1.t <- 2.5  
 sd1.c <- 1.5 
 
+# specify parameters for the second subgroup
 mu2.t <- 1 
 mu2.c <- 4    
 sd2.t <- 1.2
 sd2.c <- 3.5 
 
+# true average treatment effects
 tau_true <- c(2,-3)
 tau_true_all <- 2*0.5+(-3)*0.5
 
+# initialize the experiment with 100 subjects 
 m <- 100
+
+# sequentially enroll 200 subjects
 n <- 200
+
+# specify the maximum difference of subgroup treatment assignment probabilities
 envy_c <- 0.1
 
+# simulate adaptive experiments and obtain outputs
 results <- fairCARA(m,n,envy_c)
                   
 ```
