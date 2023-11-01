@@ -6,7 +6,11 @@ library(devtools)
 install_github("Wang-ResearchGroup/fairCARA")
 ```
 
-This package implements fair covariate-adjusted response-adaptive (CARA) design.
+This package implements fair covariate-adjusted response-adaptive (CARA) design. Our package has the following features:
+- Simulate covariate-adjusted response-adaptive experiments;
+- Implement our proposed fair CARA design;
+
+In the following example, we show how to simulate adaptive experiments using our design. 
 
 ## Example usage:
 
